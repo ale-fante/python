@@ -73,6 +73,22 @@ print("Here are the first three players on my team: ")
 for player in players[:3]:
 	print(player.title())
 
+# *********************************************************
 
+my_foods = ["pizza", "falafel", "carrot"]
+friend_food = my_foods[:]
+my_foods.append("cannoli")
+friend_food.append("ice cream")
 
+print("My favorite foods are: ")
+print(my_foods)
+
+# *********************************************************
+
+dimensions = (200, 50)
+
+print("Original dimensions: ")
+for dimension in dimensions:
+
+	print(dimension)
 
