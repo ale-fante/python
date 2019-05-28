@@ -45,4 +45,34 @@ print(sum(digits))
 
 # *********************************************************
 
+# Count for twenty
+
+one_to_twenty = []
+for num in range(1,21):
+	one_to_twenty.append(num)
+
+print(one_to_twenty)
+
+# *********************************************************
+
+# Cube comprehension - Use a list comprehension to generate
+# a list of the first 10 cubes.
+
+cubes = []
+for value in range(0,10):
+	cubes.append(value**3)
+
+print("Print the first three cubes")
+print(cubes)
+
+# *********************************************************
+
+players = ["Charles", "martina", "michael", "florence", "eli"]
+
+print("Here are the first three players on my team: ")
+for player in players[:3]:
+	print(player.title())
+
+
+
 
