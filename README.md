@@ -1,2 +1,2 @@
 # python
-little python test
+Small python tests
