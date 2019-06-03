@@ -55,6 +55,7 @@ class Battery():
 		elif self.battery_size == 85:
 			range = 270
 
+	"""Find way to pull in the correct value for str(range)"""
 	message = "This car can go approximately " + str(range) + " miles on a full charge."
 	print(message)
 
