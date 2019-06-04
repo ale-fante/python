@@ -51,15 +51,12 @@ class Battery():
 
 	def get_range(self):
 		"""Print a statement about the range this battery provides"""
-	    if self.battery_size == 70:
-	        range = 240
-	    elif self.battery_size == 85:
-	        range = 270
-	    else: 
-	         # chose a fitting value for 60 - or better: use a formular to calc range  
-	         # so you do not have to provide hardcoded range values for all charges
-	         # between 0 and 2000
-	        range = 200 # or smth like: range = self.battery_size // 3
+		if self.battery_size == 70:
+			range = 240
+		elif self.battery_size == 85:
+			range = 270
+		else:
+			range = 200 # or smth like: range = self.battery_size // 3
 
 	"""Find way to pull in the correct value for str(range)"""
 	message = "This car can go approximately " + str(range) + " miles on a full charge."
