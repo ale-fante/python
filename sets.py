@@ -168,6 +168,63 @@ result = x.intersection(y, z)
 print("Compare 3 sets, and return a set with items that is present in all 3 sets:")
 print(result)
 
+#intersection_update()
+# Syntax: set.intersection_update(set1, set2 ... etc)
+x = {"Cris", "edi", "Ale"}
+y = {"Cris", "Ale", "Ricky"}
+
+x.intersection_update(y) 
+print("Remove the item that is not present in both x and y")
+print(x)
+
+
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+
+x.intersection_update(y, z)
+print("Compare the 3 sets and return a set with items that is present in all sets")
+print(x)
+
+# isdisjoint()
+# syntax: set.isdisjoint(set)
+# The isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False.
+x = {"ale", "cris", "edi"}
+y = {"Ted", "ricky", "pollo"}
+z = x.isdisjoint(y) 
+print("Return True if no items in set x are present in set Y:")
+print(z)
+
+
+x = {"ale", "cris", "edi"}
+y = {"ale", "ricky", "pollo"}
+z = x.isdisjoint(y) 
+print("Return false if one or more items are present in both sets:")
+print(z)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
