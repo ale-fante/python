@@ -104,10 +104,180 @@ thisdict =	{
 del thisdict["model"]
 print(thisdict)
 
+# the del word can also delete the entire dictionary
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict
+# print(thisdict) #this will cause an error because "thisdict" no longer exists.
+
+# Clear() empties the dictionary
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.clear()
+print("Cleared dictionary")
+print(thisdict)
+
+# You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1,
+# and changes made in dict1 will automatically also be made in dict2.
+
+# Make a copy of the dictionary
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = thisdict.copy()
+print("Copy of dictionary:")
+print(mydict)
+
+# Make a copy of the dictionary
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+mydict = dict(thisdict)
+print("Another copy of dictionary:")
+print(mydict)
+
+# Make another copy
+thisdict =	dict(brand="Ford", model="Mustang", year=1964)
+# note that keywords are not string literals
+# note the use of equals rather than colon for the assignment
+print(thisdict)
+
+# Return dictionary values
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.values()
+
+print(x)
 
 
+# When a value is changed in the dictionary, the view object can also gets updated
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car["year"] = 2018
+x = car.values()
+print("new")
+print(x)
 
 
+# Insert an item to the dictionary
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 
+car.update({"color": "White"})
+print("Added color")
+print(car)
+
+# Get value of the model item
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("model", "Bronco")
+print("The setdefault() method returns the value of the item with the specified key.")
+# USAGE: dictionary.setdefault(keyname, value)
+print(x)
+
+
+# Get the value of the color item, if the color item doesn't exist insert color with white
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("color", "white")
+print("replace color with white")
+print(x)
+print(car)
+
+# Remove the last item of the dictionary
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print("with color")
+car["Color"] = "red"
+print(car)
+car.popitem()
+print("remove last item")
+print(car)
+
+# USAGE: dictionary.popitem(keyname, defaultvalue)
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print("Full dictionary------------")
+print(car)
+x = car.popitem()
+print("remove last item:")
+print(x)
+
+# Return keys
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.keys()
+
+print(x)
+
+# usage dictionary.keys()
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.keys()
+
+car["color"] = "white"
+
+print(x)
+
+# Create a dictionary with three keys, all with the value 0
+x = ('key1', 'key2', 'key3')
+y = 0
+
+thisdict = dict.fromkeys(x, y)
+print("Create a dictionary with three keys, all with the value 0")
+print(thisdict)
+
+# USAGE: dict.fromkeys(keys, value)
+x = ('key1', 'key2', 'key3')
+
+thisdict = dict.fromkeys(x)
+print("Same as above without specifying the value")
+print(thisdict)
 
 
