@@ -55,4 +55,59 @@ thisdict =	{
 if "model" in thisdict:
   print("Yes, 'model' is one of the keys in the thisdict dictionary")
 
+# Determine how many key-value pairs a dicrionary has, use len() method
+print("Value pairs in this dictionary:")
+print(len(thisdict))
+
+# Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+print("Add a key and value pair:")
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["Color"] = "red"
+thisdict["Mileage"] = "50 K"
+print(thisdict)
+
+print("Value pairs in this dictionary:")
+print(len(thisdict))
+
+# Remove items from a dictionary using pop() with specified key name:
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["Color"] = "red"
+thisdict.pop("year")
+print("Print dict after removed item:")
+print(thisdict)
+
+# popitem() method removes the last inserted item
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["Color"] = "red"
+thisdict.popitem()
+print("With Color removed:")
+print(thisdict)
+
+# del removes the item with specified key name:
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+
+
+
+
+
+
 
