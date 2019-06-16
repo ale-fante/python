@@ -38,3 +38,6 @@ print("Selected info about the first repo:")
 print('Name:', repo_dict['name'])
 print('Owner:', repo_dict['owner']['login'])
 print('URL:', repo_dict['url'])
+
+# See the limit on calls
+# https://api.github.com/rate_limit
