@@ -35,34 +35,28 @@ def getOnesPlace():
 def returnRomanThousandsPlace(thousands):
   '''Accepts a thousands place int as an argument and returns the roman numerals for the thousand place.'''
   thousandsDict = {1:'M', 2:'MM', 3:'MMM'} 
-  for key, value in thousandsDict.items():
-    if thousands == key:
-      return value
-
+  value = thousandsDict.get(thousands)
+  return value
 
 def returnRomanHundredsPlace(hundreds):
   '''Accepts a hundreds place integer number as an argument and returns the roman numerals for the hundreds place.'''
   hundredsDict = {0:'', 1:'C', 2:'CC', 3:'CCC', 4:'CD', 5:'D', 6:'DC', 7:'DCC', 8:'DCCC', 9:'CM'}
-  for key, value in hundredsDict.items():
-    if hundreds == key:
-      return value
+  value = hundredsDict.get(hundreds)
+  return value
 
 def returnRomanTensPlace(tens):
   '''Accepts a tens place integer number as an argument and returns the roman numerals for the tens place.'''
   tensDict = {0:'', 1:'X', 2:'XX', 3:'XXX', 4:'XL', 5:'L', 6:'LX', 7:'LXX', 8:'LXXX', 9:'XC'}
+  value = tensDict.get(tens)
 
-  for key, value in tensDict.items():
-
-    if tens == key:
-      return value
+  return value
 
 def returnRomanOnesPlace(ones):
   '''Accepts a ones place integer number as an argument and returns the roman numerals for the ones place.'''
   onesDict = {0:'', 1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:'VIII', 9:'IX'}
+  value = onesDict.get(ones)
 
-  for key, value in onesDict.items():
-    if ones == key:
-      return value
+  return value
 
 def allNums():
   thousands = getThousandsPlace()
