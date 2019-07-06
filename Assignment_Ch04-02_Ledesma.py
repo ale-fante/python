@@ -35,28 +35,22 @@ def getOnesPlace():
 def returnRomanThousandsPlace(thousands):
   '''Accepts a thousands place int as an argument and returns the roman numerals for the thousand place.'''
   thousandsDict = {1:'M', 2:'MM', 3:'MMM'} 
-  value = thousandsDict.get(thousands)
-  return value
+  return thousandsDict.get(thousands)
 
 def returnRomanHundredsPlace(hundreds):
   '''Accepts a hundreds place integer number as an argument and returns the roman numerals for the hundreds place.'''
   hundredsDict = {0:'', 1:'C', 2:'CC', 3:'CCC', 4:'CD', 5:'D', 6:'DC', 7:'DCC', 8:'DCCC', 9:'CM'}
-  value = hundredsDict.get(hundreds)
-  return value
+  return hundredsDict.get(hundreds)
 
 def returnRomanTensPlace(tens):
   '''Accepts a tens place integer number as an argument and returns the roman numerals for the tens place.'''
   tensDict = {0:'', 1:'X', 2:'XX', 3:'XXX', 4:'XL', 5:'L', 6:'LX', 7:'LXX', 8:'LXXX', 9:'XC'}
-  value = tensDict.get(tens)
-
-  return value
+  return tensDict.get(tens)
 
 def returnRomanOnesPlace(ones):
   '''Accepts a ones place integer number as an argument and returns the roman numerals for the ones place.'''
   onesDict = {0:'', 1:'I', 2:'II', 3:'III', 4:'IV', 5:'V', 6:'VI', 7:'VII', 8:'VIII', 9:'IX'}
-  value = onesDict.get(ones)
-
-  return value
+  return onesDict.get(ones)
 
 def allNums():
   thousands = getThousandsPlace()
