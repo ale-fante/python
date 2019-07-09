@@ -65,11 +65,8 @@ def allNums():
 
   return th, hu, te, on
 
-print("")
-
 # Expected output for 1984: MCMLXXXIV
 romanNumerals = allNums()
 thousands, hundreds, tens, ones = romanNumerals
-# print(numberitos)
 print("Your number in roman numerals is: " + thousands + hundreds + tens + ones)
 
