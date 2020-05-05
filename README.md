@@ -3,9 +3,11 @@
 To run/modify employados:
 
 
-python -m virtualenv venv
+python3 -m venv tutorial-env
 
-source venv/bin/activate
+source /tutorial-env/bin/activate
+
+Python 3.8.1
 
 pip install Django
 
